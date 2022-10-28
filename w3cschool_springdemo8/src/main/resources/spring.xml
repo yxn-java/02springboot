@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--非自动配置-->
+<!--    <bean  id="student" class="com.example.w3cschool_springdemo8.Student" autowire="no" >-->
+<!--        <property name="classRoom" ref="classRoom"/>-->
+<!--    </bean>-->
+<!--    自动配置：通过参数名-->
+<!--    <bean id="student" class="com.example.w3cschool_springdemo8.Student" autowire="byName"></bean>-->
+    <!--    自动配置：通过构造方法-->
+    <bean id="student" class="com.example.w3cschool_springdemo8.Student" autowire="constructor"></bean>
+    <!--    自动配置：通过默认方法-->
+<!--    <bean id="student" class="com.example.w3cschool_springdemo8.Student" autowire="default"></bean>-->
+    <bean id="classRoom" class="com.example.w3cschool_springdemo8.ClassRoom"/>
+</beans>
